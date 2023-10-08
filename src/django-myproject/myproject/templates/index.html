@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <h1>{% trans "Hello, mundito!" %}</h1>
+    <a href="{{ idea.get_url_path }}"> Listo, {{ idea.title }} </a>
+{% endblock %}
